@@ -30,15 +30,18 @@
         {
             this.btnConnect = new System.Windows.Forms.Button();
             this.lblConnection = new System.Windows.Forms.Label();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.txtNewUser = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(109, 301);
+            this.btnConnect.Location = new System.Drawing.Point(86, 109);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(75, 23);
             this.btnConnect.TabIndex = 0;
-            this.btnConnect.Text = "Go";
+            this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.BtnConnect_Click);
             // 
@@ -53,11 +56,40 @@
             this.lblConnection.TabIndex = 1;
             this.lblConnection.Text = "UnConnected";
             // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(96, 309);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 2;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.BtnInsert_Click);
+            // 
+            // txtNewUser
+            // 
+            this.txtNewUser.Location = new System.Drawing.Point(84, 246);
+            this.txtNewUser.Name = "txtNewUser";
+            this.txtNewUser.Size = new System.Drawing.Size(100, 20);
+            this.txtNewUser.TabIndex = 3;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(84, 203);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "Name";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(252, 450);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtNewUser);
+            this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.lblConnection);
             this.Controls.Add(this.btnConnect);
             this.Name = "Form1";
@@ -71,6 +103,9 @@
 
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Label lblConnection;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.TextBox txtNewUser;
+        private System.Windows.Forms.Label lblName;
     }
 }
 
